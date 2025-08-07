@@ -1,12 +1,11 @@
 class Livro {
-    // Atributos privados (encapsulamento)
+    
     private String titulo;
     private String autor;
     private int anoPublicacao;
     private double preco;
     private boolean disponivel;
 
-    // Construtor
     public Livro(String titulo, String autor, int anoPublicacao, double preco) {
         this.titulo = titulo;
         this.autor = autor;
@@ -15,7 +14,6 @@ class Livro {
         this.disponivel = true;
     }
 
-    // Getters
     public String getTitulo() {
         return titulo;
     }
@@ -148,4 +146,5 @@ public class Main {
 
         System.out.println(l1.getAutor() +' ' + l1.getTitulo()+ ' ' + l1.getAnoPublicacao() + ' ' + l1.getPreco() + ' ' + l1.isDisponivel());
     }
+
 }
